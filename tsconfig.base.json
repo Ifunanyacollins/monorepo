@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mastech/controllers": ["packages/controllers/src/index.ts"],
       "@mastech/shared-ui": ["packages/shared-ui/src/index.ts"]
     }
   },
