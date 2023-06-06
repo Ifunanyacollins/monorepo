@@ -24,6 +24,7 @@ export interface AuthFormType {
     name: string;
     require: boolean;
     placeholder: string;
+    type: string;
   }[];
   social?: ['google', 'facebook'];
   type: 'signIn' | 'signUp' | 'forgotPassword';
@@ -64,9 +65,7 @@ export function AuthPage(props: AuthPageProps) {
       <Title style={{ color: '#2B3674' }} level={2}>
         {authForm.title}
       </Title>
-      <Text className="text-[#A3AED0] text-[16px] bg-red-400">
-        {authForm.subTitle}
-      </Text>
+      <Text className="text-[#A3AED0] text-[16px]">{authForm.subTitle}</Text>
 
       <Form layout="vertical" className="my-6" onFinish={onSubmit}>
         {authForm.inputs.map((input) => (
@@ -81,7 +80,10 @@ export function AuthPage(props: AuthPageProps) {
               },
             ]}
           >
-            <Input size="large" placeholder={input.placeholder} />
+            {input.type === 'password' && <Input.Password size="large" />}
+            {input.type === 'text' && (
+              <Input size="large" placeholder={input.placeholder} />
+            )}
           </Form.Item>
         ))}
 
