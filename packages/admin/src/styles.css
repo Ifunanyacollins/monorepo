@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+label {
+    color: #2B3674 !important;
+    font-weight: 500 !important;
+   line-height: 100%;
+}
+
+.ant-layout-sider-trigger {
+    background: #2B3674 !important;
+}
+
+.ant-menu-inline .ant-menu-item::after {
+    border-right: 6px solid  #4318FF !important;
+    border-radius: 5px !important;
+  }
+  
+ .ant-menu-item {
+    color: #A3AED0;
+    font-size: 18px;
+    font-weight: 500;
+ }
+  
+  
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #fff !important;
+    color: #4318FF!important;
+    border-radius: 0px !important;
+    font-weight: 700;
+  }
+
+  .ant-menu-item-selected .ant-menu-title-content{
+    color: #2B3674!important; ;
+  }

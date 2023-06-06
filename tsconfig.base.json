@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mastech/controllers": ["packages/controllers/src/index.ts"],
-      "@mastech/shared-ui": ["packages/shared-ui/src/index.ts"]
+      "@mastech/controllers": ["libs/controllers/src/index.ts"],
+      "@mastech/shared-state": ["libs/shared-state/src/index.ts"],
+      "@mastech/shared-ui": ["libs/shared-ui/src/index.ts"],
+      "@mastech/svgs-icon": ["libs/svgs-icon/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
