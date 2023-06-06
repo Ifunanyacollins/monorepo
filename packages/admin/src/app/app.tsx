@@ -3,11 +3,7 @@ import './app.css';
 import NxWelcome from './nx-welcome';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="admin" />
-    </div>
-  );
+  return <div className="text-red-300">Hello world</div>;
 }
 
 export default App;
