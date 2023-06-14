@@ -10,7 +10,7 @@ import { errorLink } from './onErrorHandler';
 import { useAuthState } from '@mastech/shared-state';
 
 const httpLink = createHttpLink({
-  uri: 'http://159.65.62.14:8080/graphql',
+  uri: '',
 });
 
 export const useApolloClient = () => {
